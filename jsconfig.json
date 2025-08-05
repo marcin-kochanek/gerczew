@@ -1,7 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": "/",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components/*": ["./app/components/*"],
+      "@/assets/*": ["public/assets/*"],
+      "@/layouts/*": ["./app/layouts/*"],
+      "@/data/*": ["./app/data/*"],
+      "@/hooks/*": ["./app/hooks/*"],
+      "@/utils/*": ["./app/utils/*"],
+      "@/plugins": ["./app/plugins/index.js"]
     }
   }
 }
