@@ -198,14 +198,14 @@
 }
 .tm-hero {
   &-landing {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-
-    .tm-hero-title {
+    @media only screen and (max-width: 576px) {
+      text-align: center;
       font-size: 80px;
+      padding: 0 50px;
+      height: auto;
     }
   }
+
   &-ptb {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -415,9 +415,14 @@
     }
   }
 }
-.tm-details-wrapper {
-  height: 100vh;
-  overflow: hidden;
+.tm-hero-wrapper {
+  margin-top: 150px;
+
+  @media only screen and (min-width: 576px) {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
 }
 
 .tm-testimonial-height {

@@ -84,15 +84,6 @@ const AboutPage = () => {
                           jest to możliwe.
                         </p>
                         <p>
-                          Dr Gerczew z ogromną starannością wykonuje również
-                          licówki, korony i mosty, dbając nie tylko o
-                          funkcjonalność, ale także o estetykę i naturalność
-                          uśmiechu. Współpracuje z renomowanym laboratorium
-                          protetycznym, co pozwala na tworzenie prac
-                          perfekcyjnie dopasowanych do indywidualnych potrzeb
-                          pacjenta.
-                        </p>
-                        <p>
                           Jej znakiem rozpoznawczym są także małoinwazyjne
                           metamorfozy z użyciem bondingu i metody flow injection
                           – rozwiązania, które pozwalają odmienić uśmiech w
@@ -101,20 +92,8 @@ const AboutPage = () => {
                           potrafi stworzyć uśmiech, który wygląda naturalnie i
                           po prostu “pasuje” do twarzy.
                         </p>
-                        <p>
-                          Zarówno w codziennej pracy, jak i w relacji z
-                          pacjentami, kieruje się wrażliwością, spokojem i
-                          dbałością o każdy detal. Wierzy, że piękny uśmiech to
-                          coś więcej niż estetyka — to pewność siebie, która
-                          zmienia codzienne życie.
-                        </p>
-                        <p>
-                          Prywatnie jest mamą dwójki dzieci, miłośniczką sztuki,
-                          designu i mody. Te pasje często przenika do jej pracy,
-                          bo jak sama mówi — stomatologia estetyczna to forma
-                          nowoczesnej sztuki użytkowej.
-                        </p>
                       </div>
+
                       <div className="col-md-6">
                         <Image
                           className="w-100 mb-20"
@@ -137,7 +116,7 @@ const AboutPage = () => {
                       </blockquote>
                     </div> */}
 
-                    <div className="blog-details-blockquote tp_fade_bottom mt-120">
+                    <div className="blog-details-blockquote tp_fade_bottom">
                       <blockquote>
                         <span className="quote-icon">
                           <QuoteThree />
@@ -145,10 +124,34 @@ const AboutPage = () => {
                         <p>
                           Komfort, precyzja, estetyka – w trosce o Twój uśmiech.
                         </p>
-                        <span className="blockquote-info">
+                        {/* <span className="blockquote-info">
                           Weronika Gerczew
-                        </span>
+                        </span> */}
                       </blockquote>
+                    </div>
+
+                    <div className="col-12">
+                      <p>
+                        Dr Gerczew z ogromną starannością wykonuje również
+                        licówki, korony i mosty, dbając nie tylko o
+                        funkcjonalność, ale także o estetykę i naturalność
+                        uśmiechu. Współpracuje z renomowanym laboratorium
+                        protetycznym, co pozwala na tworzenie prac perfekcyjnie
+                        dopasowanych do indywidualnych potrzeb pacjenta.
+                      </p>
+                      <p>
+                        Zarówno w codziennej pracy, jak i w relacji z
+                        pacjentami, kieruje się wrażliwością, spokojem i
+                        dbałością o każdy detal. Wierzy, że piękny uśmiech to
+                        coś więcej niż estetyka — to pewność siebie, która
+                        zmienia codzienne życie.
+                      </p>
+                      <p>
+                        Prywatnie jest mamą dwójki dzieci, miłośniczką sztuki,
+                        designu i mody. Te pasje często przenika do jej pracy,
+                        bo jak sama mówi — stomatologia estetyczna to forma
+                        nowoczesnej sztuki użytkowej.
+                      </p>
                     </div>
 
                     <h4 className="blog-details-left-title mt-120">

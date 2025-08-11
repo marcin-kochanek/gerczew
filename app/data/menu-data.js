@@ -18,10 +18,10 @@ const menu_data = [
         link: '/diagnostyka-stomatologiczna',
       },
       { title: 'Profilaktyka', link: '/profilaktyka' },
-      {
-        title: 'Metamorfoza w jeden dzień',
-        link: '/metamorfoza-w-jeden-dzien',
-      },
+      // {
+      //   title: 'Metamorfoza w jeden dzień',
+      //   link: '/metamorfoza-w-jeden-dzien',
+      // },
       {
         title: 'Bonding i Flow Injection',
         link: '/bonding-flow-injection',
@@ -39,6 +39,16 @@ const menu_data = [
     id: 4,
     title: 'Metamorfozy',
     link: '/metamorfozy',
+    dropdown_menus: [
+      {
+        title: 'Metamorfoza w jeden dzień',
+        link: '/metamorfoza-w-jeden-dzien',
+      },
+      {
+        title: 'Galeria',
+        link: '/metamorfozy-galeria',
+      },
+    ],
   },
   {
     id: 5,

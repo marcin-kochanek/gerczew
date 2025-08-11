@@ -254,12 +254,10 @@
     }
   }
   &-item {
-    // background-color: var(--tp-common-white);
-    // border-radius: 10px;
     height: 100%;
     padding: 65px 40px;
     box-shadow: 0 30px 70px rgba(1, 15, 28, 0.1);
-    // box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(1, 15, 28, 0.05);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 
@@ -271,8 +269,12 @@
       padding: 40px 30px;
       margin-right: 0;
     }
-    @media #{$xl,$lg,$md,$xs} {
+    @media #{$xl,$lg,$md} {
       margin-right: 0;
+    }
+
+    @media #{$xs} {
+      margin: 0 20px;
     }
   }
   &-title-sm {
@@ -283,6 +285,8 @@
     color: var(--tp-common-black);
     font-family: var(--tp-ff-marcellus);
     margin-bottom: 15px;
+    text-align: center;
+
     @media #{$xxxl,$xxl} {
       font-size: 27px;
     }

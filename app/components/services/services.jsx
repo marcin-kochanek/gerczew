@@ -12,11 +12,12 @@ import sv_1 from '@/assets/img/icons/480px/tooth-cracked_hires.png'
 import sv_2 from '@/assets/img/icons/480px/dental-implant_hires.png'
 import sv_3 from '@/assets/img/icons/480px/c-arm_hires.png'
 import sv_4 from '@/assets/img/icons/480px/tooth-caries_hires.png'
-import sv_5 from '@/assets/img/icons/480px/dental-crown_hires.png'
+import sv_5 from '@/assets/img/icons/480px/dental-filling_hires.png'
 import sv_6 from '@/assets/img/icons/480px/dental-machine_hires.png'
 import sv_7 from '@/assets/img/icons/480px/protective-glasses_hires.png'
 import sv_8 from '@/assets/img/icons/480px/dental-mirror_hires.png'
 import sv_9 from '@/assets/img/icons/480px/smiling-mouth_hires.png'
+import sv_10 from '@/assets/img/icons/480px/dental-crown_hires.png'
 
 // team data
 const services_data = [
@@ -92,6 +93,14 @@ const services_data = [
     description:
       'W Gerczew Stomatologia stosujemy metodę wybielania nakładkowego oraz gabinetową. Metoda gabinetowa skierowana do tych, którzy chcą uzyskać efekt natychmiastowy.',
   },
+  {
+    id: 10,
+    link: '/metamorfoza-w-jeden-dzien',
+    icon: sv_10,
+    name: 'Metamorfoza w jeden dzień',
+    description:
+      'Metamorfoza uśmiechu, którą można wykonać nawet podczas jednej wizyty – dzięki nowoczesnemu, wysokoestetycznemu bondingowi kompozytowemu.',
+  },
 ]
 
 let servicesNumber
@@ -118,8 +127,10 @@ export default function Services({ isHomePage = false }) {
       )}
       <div className={`${isHomePage ? 'container-lg' : 'container'}`}>
         <div
-          className={`${isHomePage ? 'g-5' : 'g-4'} row`}
-          style={{ justifyContent: 'stretch' }}
+          className={`${
+            isHomePage ? 'g-5' : 'g-4'
+          } row justify-content-stretch`}
+          // style={{ justifyContent: 'stretch' }}
         >
           {services_data.slice(0, servicesNumber).map((item) => (
             <div
@@ -147,10 +158,8 @@ export default function Services({ isHomePage = false }) {
                     <span className="tp-service-4-title-sm">
                       <h2>{item.name}</h2>
                     </span>
+
                     <p>{item.description}</p>
-                    {/* <Link className="tp-service-4-link" href="/service">
-                      Więcej
-                    </Link> */}
                   </div>
                 </div>
               </Link>

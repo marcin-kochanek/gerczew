@@ -314,7 +314,8 @@
   &-blockquote {
     margin-left: 100px;
     position: relative;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     @media #{$lg} {
       margin-left: 40px;
     }

@@ -48,7 +48,7 @@ const HomePage = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="showcase-details-2-section-box">
-                <h4 className="showcase-details-2-section-title tp_fade_right">
+                <h4 className="showcase-details-2-section-title tp_title_anim">
                   dr Weronika Gerczew
                 </h4>
               </div>
@@ -56,12 +56,12 @@ const HomePage = () => {
           </div>
           <div className="row">
             <div className="col-xl-3">
-              <div className="showcase-details-2-section-left">
-                <span className="ab-inner-subtitle mb-25">
+              <div className="showcase-details-2-section-left mb-30 tp_title_anim">
+                <span className="ab-inner-subtitle">
                   <Tag />
                   Gabinet stomatologiczny w Bydgoszczy
                 </span>
-                <span className="ab-inner-subtitle mb-25">
+                <span className="ab-inner-subtitle">
                   <Tag />
                   Bonding zębów
                 </span>
