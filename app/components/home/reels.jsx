@@ -8,19 +8,19 @@ import Image from 'next/image'
 const team_data = [
   {
     id: 1,
-    path: '/assets/video/reels_1.mp4',
+    path: 'https://res.cloudinary.com/dtkg1nutj/video/upload/v1754986278/reels_1_i20nmp.mp4',
   },
   {
     id: 2,
-    path: '/assets/video/reels_2.mp4',
+    path: 'https://res.cloudinary.com/dtkg1nutj/video/upload/v1754986279/reels_2_hlvnft.mp4',
   },
   {
     id: 3,
-    path: '/assets/video/reels_3.mp4',
+    path: 'https://res.cloudinary.com/dtkg1nutj/video/upload/v1754986278/reels_4_cp347n.mp4',
   },
   {
     id: 4,
-    path: '/assets/video/reels_4.mp4',
+    path: 'https://res.cloudinary.com/dtkg1nutj/video/upload/v1754986274/reels_3_vohjea.mp4',
   },
 ]
 const slider_setting = {
