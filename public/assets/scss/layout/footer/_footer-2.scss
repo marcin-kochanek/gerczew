@@ -55,6 +55,11 @@
       }
     }
   }
+  &-contact {
+    @media #{$lg, $xl, $xxl} {
+      padding-left: 50px;
+    }
+  }
   &-contact-item {
     margin-bottom: 15px;
     & span {

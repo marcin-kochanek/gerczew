@@ -447,13 +447,11 @@
 }
 .cn-contact-2 {
   &-content {
-    padding-left: 50px;
-
     @media #{$lg, $xl, $xxl} {
       justify-content: flex-end;
       border-right: 1px solid var(--tp-common-black-2);
       padding-right: 50px;
-      padding-left: 0;
+      padding-left: 50px;
     }
   }
   &-title {

@@ -127,9 +127,7 @@ export default function Services({ isHomePage = false }) {
       )}
       <div className={`${isHomePage ? 'container-lg' : 'container'}`}>
         <div
-          className={`${
-            isHomePage ? 'g-5' : 'g-4'
-          } row justify-content-stretch`}
+          className={`${isHomePage ? 'g-5' : 'g-4'} row justify-content-center`}
           // style={{ justifyContent: 'stretch' }}
         >
           {services_data.slice(0, servicesNumber).map((item) => (
