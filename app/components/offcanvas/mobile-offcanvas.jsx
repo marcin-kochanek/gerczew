@@ -31,18 +31,21 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }) {
               <MobileMenus closeOffcanvas={() => setOpenOffcanvas(false)} />
             </div>
             <div className="tp-offcanvas-contact">
-              <h3 className="tp-offcanvas-title sm">Gerczew Stomatologia</h3>
+              <h3 className="tp-offcanvas-title sm">Umów się na wizytę</h3>
 
               <ul>
                 <li>
+                  <div>Czynne</div>
+                  <a>10.00-18.00 | Pon-pt</a>
+                </li>
+                <li>
+                  <div>Telefon</div>
+                  <a>+48 503 647 102</a>
+                </li>
+                <li>
+                  <div>Adres</div>
                   <a>ul. Tadeusza Boya-Żeleńskiego 25</a>
                   <a>85-980 Bydgoszcz</a>
-                </li>
-                <li>
-                  <a>Czynne: Pon-pt 10.00-18.00</a>
-                </li>
-                <li>
-                  <a>Telefon: +48 503 647 102</a>
                 </li>
               </ul>
             </div>

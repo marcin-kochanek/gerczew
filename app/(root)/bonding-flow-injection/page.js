@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import photo_1 from '@/assets/img/home-01/services/chirurgia-stomatologiczna.jpg'
-import photo_2 from '@/assets/img/home-01/services/periodontologia.jpg'
+import photo_1 from '@/assets/img/home-01/services/bonding.jpg'
 
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -141,21 +140,11 @@ export default function ServicePage() {
         </div>
         <div className="blog-details-thumb-box">
           <div className="row">
-            <div className="col-md-6">
-              <div className="blog-details-thumb">
+            <div className="col-xl-12">
+              <div className="showcase-details-thumb">
                 <Image
-                  className="w-100 mb-20"
+                  data-speed=".8"
                   src={photo_1}
-                  alt="details-thumb"
-                  style={{ height: 'auto' }}
-                />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="blog-details-thumb">
-                <Image
-                  className="w-100 mb-20"
-                  src={photo_2}
                   alt="details-thumb"
                   style={{ height: 'auto' }}
                 />

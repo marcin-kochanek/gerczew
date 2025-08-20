@@ -74,10 +74,10 @@
   & .tp-offcanvas-2-bg.is-left {
     background-color: var(--tp-common-black);
   }
-  & .tp-main-menu-mobile nav ul li > a {
+  & .tp-main-menu-mobile nav ul li > div {
     color: var(--tp-common-white);
   }
-  & .tp-main-menu-mobile nav ul li.has-dropdown > a.expanded {
+  & .tp-main-menu-mobile nav ul li.has-dropdown > div.expanded {
     color: var(--tp-common-white);
   }
   & .tp-offcanvas-2-area .tp-main-menu-mobile > nav > ul > li > a::after {
@@ -103,7 +103,7 @@
   & .tpoffcanvas__social-link ul li a::before {
     background-color: var(--tp-common-white);
   }
-  & .tp-main-menu-mobile nav ul li.has-dropdown > a .dropdown-toggle-btn i {
+  & .tp-main-menu-mobile nav ul li.has-dropdown > div .dropdown-toggle-btn i {
     color: var(--tp-common-white);
   }
   &

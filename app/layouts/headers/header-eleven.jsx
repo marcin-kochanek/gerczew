@@ -55,7 +55,7 @@ export default function HeaderEleven({ transparent = false, cls = '' }) {
                 </div>
               </div>
               <div className="col-xl-2 col-lg-6 col-md-6 col-6">
-                <div className="tp-inner-header-right-action text-end pr-30">
+                <div className="tp-inner-header-right-action text-end">
                   <div className="tp-offcanvas-social">
                     <ul className="d-none d-xl-block">
                       <li>

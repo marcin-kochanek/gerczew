@@ -25,7 +25,7 @@
 .tp-offcanvas {
   &-logo {
     & img {
-      width: 150px;
+      width: 70px;
       height: 100%;
     }
   }
@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 99;
     z-index: 99999;
-    padding: 50px 50px;
+    padding: 30px;
     overflow-y: scroll;
     @extend %transition;
     overflow-x: hidden;
@@ -99,7 +99,7 @@
       top: 17px;
     }
 
-    & .tp-main-menu-mobile ul li > a {
+    & .tp-main-menu-mobile ul li > div {
       font-size: 15px;
     }
 
@@ -120,7 +120,7 @@
     }
   }
   &-top {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
   &-close {
     &-btn {
@@ -145,7 +145,7 @@
   &-title {
     font-size: 40px;
     line-height: 1;
-    letter-spacing: -0.8px;
+    letter-spacing: 1px;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--tp-common-black);
@@ -169,7 +169,7 @@
         list-style: none;
 
         &:not(:last-child) {
-          margin-bottom: 2px;
+          margin-bottom: 10px;
         }
         & a {
           display: inline-block;
@@ -341,7 +341,7 @@
         & > ul {
           margin-bottom: 10px;
           & > li {
-            & > a {
+            & > div {
               padding: 23px 0;
               font-size: 62px;
               font-weight: 700;
@@ -425,13 +425,13 @@
         border-bottom: 1px solid rgba(6, 7, 40, 0.1);
       }
     }
-    & .tp-main-menu-mobile nav ul li:not(:last-child) a {
+    & .tp-main-menu-mobile nav ul li:not(:last-child) div {
       border-bottom: 0;
     }
     & .tp-main-menu-mobile > nav > ul > li ul.submenu {
       border-top: 1px solid rgba(6, 7, 40, 0.1);
     }
-    & .tp-main-menu-mobile nav ul li.has-dropdown > a .dropdown-toggle-btn {
+    & .tp-main-menu-mobile nav ul li.has-dropdown > div .dropdown-toggle-btn {
       font-size: 22px;
     }
   }

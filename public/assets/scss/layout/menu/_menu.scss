@@ -322,6 +322,8 @@
   }
 }
 .tp-main-menu-mobile {
+  margin-bottom: 50px;
+
   & .tp-submenu {
     display: none;
   }
@@ -333,19 +335,29 @@
       position: static;
       display: block;
       box-shadow: none;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       & li {
         list-style: none;
         position: relative;
         width: 100%;
         padding: 0;
         &:not(:last-child) {
-          & > a {
+          & > div {
             border-bottom: 1px solid rgba($color: #060728, $alpha: 0.1);
           }
         }
         &.has-dropdown {
+          & div {
+            display: flex;
+            justify-content: space-between;
+          }
+
           & > a {
+            width: 100%;
+          }
+
+          & > a,
+          & > div > a {
             & .dropdown-toggle-btn {
               position: absolute;
               right: 30px;
@@ -388,7 +400,10 @@
             }
           }
         }
-        & > a {
+
+        & > a,
+        & > div > a {
+          width: 100%;
           display: block;
           position: relative;
           padding: 15px 0;
@@ -430,7 +445,7 @@
             & a {
               margin-left: auto;
               width: 93%;
-              padding: 10px 5%;
+              padding: 15px 5%;
               text-shadow: none !important;
               visibility: visible;
               padding-left: 0;

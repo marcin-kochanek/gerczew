@@ -12,6 +12,8 @@
     }
     & .accordion-header {
       & .accordion-buttons {
+        display: flex;
+        align-items: center;
         letter-spacing: 1.5px;
         padding: 20px 0;
         padding-left: 30px;
@@ -27,8 +29,8 @@
         }
         & .accordion-icon {
           position: absolute;
-          top: 40px;
           right: 0;
+
           &::before {
             position: absolute;
             content: '';
@@ -41,6 +43,7 @@
             border-radius: 2px;
             transition: 0.4s;
           }
+
           &::after {
             position: absolute;
             content: '';
@@ -51,6 +54,17 @@
             transform: translate(-50%, -50%);
             background-color: #525258;
             border-radius: 2px;
+          }
+
+          @media #{$md,$xs} {
+            &::before {
+              height: 15px;
+              width: 1px;
+            }
+            &::after {
+              width: 15px;
+              height: 1px;
+            }
           }
         }
       }

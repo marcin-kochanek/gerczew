@@ -75,8 +75,11 @@ export const services_price_data = [
         price: 150,
       },
     ],
-    additional_info:
-      'ZNIECZULENIE KOMPUTEROWE DO KAŻDEGO ZABIEGU GRATIS! </br>* cena bondingu i flow injection obejmuje 1 ząb </br>* Zaleca się wykonywanie higienizacji z polerowaniem bondingu co 4 miesiące',
+    additional_info: [
+      'Znieczulenie komputerowe do kadego zabiegu - gratis!',
+      'Cena bondingu i flow injection obejmuje 1 ząb',
+      'Zaleca się wykonywanie higienizacji z polerowaniem bondingu co 4 miesiące',
+    ],
   },
   {
     id: 3,
@@ -167,12 +170,8 @@ export const services_price_data = [
         service: 'Zniesienie nadwrażliwości szyjek zębowych - cena za 1 ząb',
         price: 150,
       },
-      {
-        service:
-          'ZNIECZULENIE KOMPUTEROWE DO KAŻDEGO ZABIEGU GRATIS! </br>* cena bondingu i flow injection obejmuje 1 ząb </br>* Zaleca się wykonywanie higienizacji z polerowaniem bondingu co 4 miesiące',
-      },
     ],
-    additional_info: '*Zaleca się wykonywanie higienizacji co 4 miesiące',
+    additional_info: ['Zaleca się wykonywanie higienizacji co 4 miesiące'],
   },
   {
     id: 5,
@@ -275,8 +274,9 @@ export const services_price_data = [
         price: 500,
       },
     ],
-    additional_info:
-      '*leczenie kanałowe obejmuje odbudowę materiałem kompozytowym',
+    additional_info: [
+      'Leczenie kanałowe obejmuje odbudowę materiałem kompozytowym',
+    ],
   },
   {
     id: 8,
@@ -310,8 +310,9 @@ export const services_price_data = [
         price: 'od 500',
       },
     ],
-    additional_info:
-      '*leczenie kanałowe obejmuje odbudowę materiałem kompozytowym',
+    additional_info: [
+      'Leczenie kanałowe obejmuje odbudowę materiałem kompozytowym',
+    ],
   },
   {
     id: 9,
@@ -418,7 +419,7 @@ export const services_price_data = [
         price: 200,
       },
     ],
-    additional_info: 'ZNIECZULENIE KOMPUTEROWE DO KAŻDEGO ZABIEGU GRATIS!',
+    additional_info: ['Znieczulenie komputerowe do kadego zabiegu - gratis!'],
   },
   {
     id: 10,
@@ -519,6 +520,6 @@ export const services_price_data = [
         price: 'wycena indywidualna',
       },
     ],
-    additional_info: '*Zależy od ilości nakładek w planie leczenia',
+    additional_info: ['Wycena zależy od ilości nakładek w planie leczenia'],
   },
 ]

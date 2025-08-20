@@ -26,14 +26,24 @@ export default function FaqItem({ item }) {
             <div key={i} className="row">
               <p className="col-xl-10 col-8">{service.service}</p>
               <p className="col-xl-2 col-4 text-end">
-                {service.price}{' '}
-                {service.price == ('bezpłatnie' || 'wycena indywidualna')
+                {service.price}
+                {service.price == 'bezpłatnie' ||
+                service.price == 'wycena indywidualna'
                   ? ''
-                  : 'zł'}
+                  : ' zł'}
               </p>
             </div>
           ))}
-          <p>{item.additional_info}</p>
+          {item.additional_info && (
+            <ul className="mb-20">
+              <b>Dodatkowe informacje:</b>
+              {item.additional_info?.map((info, i) => (
+                <li className="ml-20" key={i}>
+                  {info}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </div>

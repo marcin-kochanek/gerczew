@@ -70,7 +70,7 @@ export default function Testimonials({ style_2 = true }) {
     <div className="container">
       <div className="p-relative">
         <div
-          className={`tp-studio-testimonial-area tp-studio-plr white-bg fix tp-studio-testimonial-xs-space`}
+          className={`tp-studio-testimonial-area tp-studio-plr white-bg fix`}
         >
           <div className="tp-studio-testimonial-title-box d-none d-md-block">
             <h4 className="tp-studio-testimonial-title">Opinie</h4>

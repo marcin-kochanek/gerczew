@@ -102,10 +102,16 @@ export default function FooterTwo({ whiteFooter = true, topCls = '' }) {
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <a className="mb-10" href="#">
+                <a
+                  className="mb-10"
+                  href="https://www.instagram.com/gerczew.stomatologia"
+                >
                   Instagram
                 </a>
-                <a className="mb-10" href="#">
+                <a
+                  className="ml-10 mb-10"
+                  href="https://www.facebook.com/profile.php?id=61562122764881"
+                >
                   Facebook
                 </a>
               </div>

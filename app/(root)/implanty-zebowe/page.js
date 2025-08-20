@@ -95,21 +95,11 @@ export default function ServicePage() {
         </div>
         <div className="blog-details-thumb-box tp_fade_bottom">
           <div className="row">
-            <div className="col-md-6">
-              <div className="blog-details-thumb">
+            <div className="col-xl-12">
+              <div className="showcase-details-thumb">
                 <Image
-                  className="w-100 mb-20"
+                  data-speed=".8"
                   src={implanty_1}
-                  alt="details-thumb"
-                  style={{ height: 'auto' }}
-                />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="blog-details-thumb">
-                <Image
-                  className="w-100 mb-20"
-                  src={implanty_2}
                   alt="details-thumb"
                   style={{ height: 'auto' }}
                 />

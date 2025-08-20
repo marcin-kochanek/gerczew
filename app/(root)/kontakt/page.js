@@ -9,6 +9,8 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import useScrollSmooth from '@/hooks/use-scroll-smooth'
 import { ScrollSmoother, ScrollTrigger, SplitText } from '../../plugins'
+import shape from '@/assets/img/inner-about/about/shape-1.png'
+import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
 const ContactPage = () => {

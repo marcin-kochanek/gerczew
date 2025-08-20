@@ -1,9 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import leczenie_kanalowe_1 from '@/assets/img/about/leczenie-kanalowe_1.jpg'
-import leczenie_kanalowe_2 from '@/assets/img/about/leczenie-kanalowe_2.jpg'
-import details_thumb_2 from '@/assets/img/home-01/services/periodontologia.jpg'
+import leczenie_kanalowe_1 from '@/assets/img/about/leczenie-kanalowe_2.jpg'
 
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -78,10 +76,10 @@ export default function ServicePage() {
         <div className="showcase-details-thumb-wrap">
           <div className="row gx-80">
             <div className="col-xl-12">
-              <div className="showcase-details-thumb mb-80">
+              <div className="showcase-details-thumb">
                 <Image
                   data-speed=".8"
-                  src={leczenie_kanalowe_2}
+                  src={leczenie_kanalowe_1}
                   alt="details-thumb"
                   style={{ height: 'auto' }}
                 />

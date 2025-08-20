@@ -59,7 +59,7 @@ const services_data = [
     icon: sv_5,
     name: 'Bonding zębów',
     description:
-      'Bonding zębów to metoda nieinwazyjnej korekty zębów za pomocą specjalnego materiału kompozytowego. Bonding stosujemy przy drobnych zmianach estetycznych, gdyż materiał nakładany jest „z ręki”, a więc na podstawie wizualnej i subiektywnej oceny lekarza co do kształtu odbudowywanego zęba.',
+      'Bonding zębów to metoda nieinwazyjnej korekty zębów za pomocą specjalnego materiału kompozytowego, który stosujemy przy drobnych zmianach estetycznych.',
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ const services_data = [
     icon: sv_6,
     name: 'Periodontologia',
     description:
-      'Periodontolog jest specjalistą zajmującym się leczeniem chorób przyzębia oraz błony śluzowej jamy ustnej. Przyzębie to otaczający zęby zespół tkanek, do których należą dziąsła, okostna, ozębna i kość wyrostka zębodołowego.',
+      'Periodontolog jest specjalistą zajmującym się leczeniem chorób przyzębia oraz błony śluzowej jamy ustnej.',
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const services_data = [
     icon: sv_7,
     name: 'Diagnostyka stomatologiczna',
     description:
-      'Diagnostyka stomatologiczna to podstawowy sposób wykrycia i precyzyjnego rozpoznania chorób jamy ustnej. Dzięki odpowiednio wczesnej i właściwie przeprowadzonej diagnostyce jesteśmy w stanie odpowiednio zdiagnozować chorobę i dobrać właściwy plan leczenia.',
+      'Diagnostyka stomatologiczna to podstawowy sposób wykrycia i precyzyjnego rozpoznania chorób jamy ustnej.',
   },
   {
     id: 8,
@@ -147,17 +147,21 @@ export default function Services({ isHomePage = false }) {
                       'url(/assets/img/home-04/brand/overly.png)',
                   }}
                 >
-                  <div className="tp-service-4-icon">
-                    <Image
-                      src={item.icon}
-                      alt="icon"
-                      style={{ height: '70px', width: '70px' }}
-                    />
-                  </div>
+                  <div className="tp-service-4-card"></div>
+
                   <div className="tp-service-4-content">
-                    <span className="tp-service-4-title-sm">
-                      <h2>{item.name}</h2>
-                    </span>
+                    <div className="tp-service-4-shape">
+                      <div className="tp-service-4-icon">
+                        <Image
+                          src={item.icon}
+                          alt="icon"
+                          style={{ height: '70px', width: '70px' }}
+                        />
+                      </div>
+                      <span className="tp-service-4-title-sm">
+                        <h2>{item.name}</h2>
+                      </span>
+                    </div>
 
                     <p>{item.description}</p>
                   </div>

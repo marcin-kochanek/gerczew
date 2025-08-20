@@ -1,12 +1,72 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import map from '@/assets/img/map_2.png'
+import shape from '@/assets/img/inner-about/about/shape-1.png'
 
 export default function ContactArea() {
   return (
     <div className="cn-contactform-area cn-contactform-style p-relative pb-100">
-      <div className="container fq-faq-bdr pt-80">
-        {/* <div className="cn-contactform-2-bg black-bg"> */}
+      <div className="container fq-faq-bdr pt-50">
+        <div className="row">
+          <div className="cn-contact-2-content col-xl-6 col-lg-6 col-md-12 col-12 mb-50 d-flex">
+            <h4 className="cn-contact-2-title d-flex align-items-center">
+              Gerczew <br />
+              Stomatologia
+            </h4>
+          </div>
+          <div className="col-xl-6 col-lg-6 col-md-12 col-12 mb-50">
+            <div className="tp-footer-2-contact">
+              <div className="tp-footer-2-contact-item">
+                <div className="tp-footer-2-contact-content">
+                  <a>Nr telefonu</a>
+                </div>
+                <h4 className="tp-contact-2-title">+48 503 647 102</h4>
+              </div>
+            </div>
+
+            <div className="tp-footer-2-contact">
+              <div className="tp-footer-2-contact-item">
+                <div className="tp-footer-2-contact-content">
+                  <a>Adres</a>
+                </div>
+                <h4 className="tp-contact-2-title">
+                  ul. Tadeusza Boya-Żeleńskiego 25
+                  <br />
+                  85-980 Bydgoszcz
+                </h4>
+              </div>
+            </div>
+
+            <div className="tp-footer-2-contact">
+              <div className="tp-footer-2-contact-item">
+                <div className="tp-footer-2-contact-content">
+                  <a href="https://www.google.com/maps" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="container mb-120">
+          <div className="row">
+            <div className="col-xl-5">
+              <div className="ab-about-category-title-box mb-40 p-relative">
+                <h4 className="ab-about-category-title">
+                  <span>Umów się na</span>
+                  <br />
+                  Wizytę
+                </h4>
+                <Image
+                  className="ab-about-shape-1 d-block"
+                  src={shape}
+                  alt="shape"
+                />
+              </div>
+            </div>
+            <div className="col-xl-7">
+              <div className="cn-contactform-wrap"></div>
+            </div>
+          </div>
+        </div> */}
         <div className="row">
           <div className="col-xl-12">
             <div className="cn-contactform-2-map">
@@ -20,22 +80,8 @@ export default function ContactArea() {
               </Link>
             </div>
           </div>
-          {/* <div className="col-xl-12">
-              <div className="cn-contactform-wrap">
-                <h4 className="cn-contactform-2-title">Umów wizytę</h4>
-                <div className="cn-contactform-2-subtitle mb-25">
-                  <p>Gerczew Stomatologia</p>
-                  <p>ul. Tadeusza Boya-Żeleńskiego 25</p>
-                  <p>85-980 Bydgoszcz</p>
-                  <br />
-                  <p>Pon-pt 10.00 – 18.00</p>
-                  <p>Telefon: +48 503 647 102</p>
-                </div>
-              </div>
-            </div> */}
         </div>
       </div>
     </div>
-    // </div>
   )
 }

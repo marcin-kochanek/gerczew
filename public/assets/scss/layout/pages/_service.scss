@@ -243,9 +243,12 @@
     }
     @media #{$xs} {
       font-size: 43px;
+      margin: 0 20px;
     }
   }
   &-shape {
+    margin-bottom: 40px;
+    height: 180px;
     &-1 {
       margin-right: 60px;
       @media #{$md,$xs} {
@@ -255,7 +258,7 @@
   }
   &-item {
     height: 100%;
-    padding: 65px 40px;
+    padding: 55px 40px;
     box-shadow: 0 30px 70px rgba(1, 15, 28, 0.1);
     border: 1px solid rgba(1, 15, 28, 0.05);
     -webkit-transition: all 0.3s;
@@ -263,14 +266,6 @@
 
     &:hover {
       transform: translateY(-1rem) scale(1.03);
-    }
-
-    @media #{$xxl} {
-      padding: 40px 30px;
-      margin-right: 0;
-    }
-    @media #{$xl,$lg,$md} {
-      margin-right: 0;
     }
 
     @media #{$xs} {
@@ -322,7 +317,6 @@
       line-height: 24px;
       color: var(--tp-common-black);
       opacity: 0.7;
-      margin-bottom: 45px;
       @media #{$xxl,$xl,$lg,$md,$xs} {
         & br {
           display: none;

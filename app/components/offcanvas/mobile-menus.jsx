@@ -19,12 +19,20 @@ export default function MobileMenus({ closeOffcanvas }) {
         <ul>
           {menu_data.map((menu) => (
             <li key={menu.id} className="has-dropdown">
-              <Link href={menu.link} onClick={closeOffcanvas}>
-                {menu.title}
-                <button className="dropdown-toggle-btn">
-                  <i className="fa-light fa-plus"></i>
-                </button>
-              </Link>
+              <div>
+                <Link href={menu.link} onClick={closeOffcanvas}>
+                  {menu.title}
+                </Link>
+                {menu.dropdown_menus && (
+                  <button
+                    className="dropdown-toggle-btn"
+                    onClick={() => openMobileMenu(menu.title)}
+                  >
+                    <i className="fa-light fa-plus"></i>
+                  </button>
+                )}
+              </div>
+
               {menu.dropdown_menus && (
                 <ul
                   className="tp-submenu submenu"
@@ -34,7 +42,9 @@ export default function MobileMenus({ closeOffcanvas }) {
                 >
                   {menu.dropdown_menus.map((mm, i) => (
                     <li key={i}>
-                      <Link href={mm.link}>{mm.title}</Link>
+                      <Link href={mm.link} onClick={closeOffcanvas}>
+                        {mm.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
